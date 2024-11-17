@@ -1,0 +1,160 @@
+/* Global styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+}
+
+h1{
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  margin: 20px 0;
+  color: #444;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.orderbook {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+}
+
+.orderbook > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.orderbook h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.orderbook div div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.orderbook div div:last-child {
+  border-bottom: none;
+}
+
+/* Styling for select dropdown */
+select {
+  padding: 8px;
+  font-size: 14px;
+  margin: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+select:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+/* Styling for the orderbook table */
+.orderbook {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background: #fff;
+  padding: 10px;
+}
+
+.orderbook > div {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.orderbook h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.orderbook div div {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px;
+  font-size: 14px;
+  border-bottom: 1px solid #ddd;
+}
+
+.orderbook div div:last-child {
+  border-bottom: none;
+}
+
+/* Color-coding for price changes */
+.price-up {
+  color: green;
+}
+
+.price-down {
+  color: red;
+}
+
+/* Additional visual cues */
+.orderbook div div {
+  transition: background-color 0.3s ease;
+}
+
+.orderbook div div:hover {
+  background-color: #f0f8ff;
+}
+
+/* Chart styling */
+.chart-container {
+  margin: 20px 0;
+  padding: 20px;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.chart-container canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+  .orderbook {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .orderbook > div {
+    margin: 10px 0;
+  }
+
+  .chart-container {
+    padding: 10px;
+  }
+}
+
+.chartContainer{
+  text-align: center;
+}
